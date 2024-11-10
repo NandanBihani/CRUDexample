@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Site</title>
+    <style>
+        /* Body styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4a90e2, #50c9c3);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Main container styling */
+        .home-container {
+            background-color: #ffffff;
+            width: 400px;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Heading */
+        .home-container h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Link buttons styling */
+        .home-container a {
+            display: inline-block;
+            width: 100%;
+            margin: 1rem 0;
+            padding: 0.8rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(135deg, #4a90e2, #50c9c3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .home-container a:hover {
+            background: linear-gradient(135deg, #50c9c3, #4a90e2);
+            transform: scale(1.05);
+        }
+
+        /* Animation for the container */
+        .home-container {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="home-container">
+        <h1>Welcome</h1>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </div>
+</body>
+</html>
+
